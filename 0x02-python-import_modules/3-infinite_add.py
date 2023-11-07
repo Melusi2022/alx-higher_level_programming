@@ -4,4 +4,4 @@ if __name__ == "__main":
     a = 0
     for i in range(1, len(sys.argv)):
         a = a + int(sys.argv[i])
-    print("{}". format(a))
+        print("{}".format(a))

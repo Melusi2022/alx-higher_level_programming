@@ -88,9 +88,9 @@ class Rectangle:
                 img = img + "\n"
         return img
 
-        def __repr__(self):
+    def __repr__(self):
             return "Rectangle({}, {})".format(self.__width, self.__height)
 
-        def __del__(self):
+    def __del__(self):
             Rectangle.number_of_instances -= 1
             print("Bye rectangle...")

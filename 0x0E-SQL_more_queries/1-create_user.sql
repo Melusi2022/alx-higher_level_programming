@@ -1,2 +1,4 @@
--- creates database only if it does not exist
-CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
+-- creates a MySQL server user
+CREATE USER IF NOT EXISTS 'user_0d_1'@'localhost'
+IDENTIFIED BY 'user_0d_1_pwd';
+GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost';

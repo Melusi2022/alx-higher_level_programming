@@ -1,23 +1,21 @@
 #!/usr/bin/python3
+"""Python script that fetches https://alx-intranet.hbtn.io/status
 """
-Python script that:
-    - fetches https://alx-intranet.hbtn.io/status
-    - must use the package urllib
-    - not allowed to import any packages other than urllib
-    - The body of the response must be displayed
-    - like the following example (tabulation before -)
-    - must use a with statement
-    """
+import urllib.request
 
-    if __name__ == "__main__":
-            from urllib.request import urlopen, Request
 
-                url = "https://alx-intranet.hbtn.io/status"
-                    req = Request(url)
-                        with urlopen(req) as res:
-                                content = res.read()
+def main():
+        """Python script that fetches https://alx-intranet.hbtn.io/status
+            """
+                req = urllib.request.Request('https://alx-intranet.hbtn.io/status')
 
-                                    print("Body response:")
-                                        print(f"\t- type:", type(content))
-                                            print(f"\t- content:", (content))
-                                                print(f"\t- utf8 content:", content.decode('utf-8'))
+                    with urllib.request.urlopen(req) as response:
+                                content_val = response.read()
+                                        print('Body response:')
+                                                print("\t- type: {}".format(type(content_val)))
+                                                        print("\t- content: {}".format(content_val))
+                                                                print("\t- utf8 content: {}".format(content_val.decode('utf-8')))
+
+
+                                                                if __name__ == "__main__":
+                                                                        main()

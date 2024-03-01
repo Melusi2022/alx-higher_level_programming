@@ -14,4 +14,3 @@ Python script that:
                             print(res.read().decode('utf-8'))
                                 except HTTPError as err:
                                         print(f'Error code: {err.code}')
-

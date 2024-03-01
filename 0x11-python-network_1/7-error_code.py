@@ -13,4 +13,3 @@ Python script that:
                         print(f"Error code: {req.status_code}")
                             else:
                                         print(req.text)
-

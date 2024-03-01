@@ -1,12 +1,10 @@
 #!/usr/bin/python3
-"""Python script that fetches https://alx-intranet.hbtn.io/status
-"""
+"""Python script that fetches https://alx-intranet.hbtn.io/status"""
 import urllib.request
 
 
 def main():
-        """Python script that fetches https://alx-intranet.hbtn.io/status
-            """
+        """Python script that fetches https://alx-intranet.hbtn.io/status"""
                 req = urllib.request.Request('https://alx-intranet.hbtn.io/status')
 
                     with urllib.request.urlopen(req) as response:

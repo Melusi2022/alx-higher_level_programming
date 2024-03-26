@@ -2,7 +2,7 @@
 /**
  *   compute number of tasks completed by user id
  *     usage: /6-completed_tasks.js <API URL>
- *       */
+ **/
 const myArgs = process.argv.slice(2);
 const request = require('request');
 const id_ = [];
